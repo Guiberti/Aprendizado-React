@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import HelloWorld from "./components/HelloWorld";
+import SayMayName from "./components/SayMayName";
+import Pessoa from "./components/Pessoa";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    const name = 'Guilherme'
+    const newName = name.toUpperCase()
+    const url = 'https://labetno.ufpa.br/images/galeria_em_artigos/image03_grd.png'
+
+    return (
+        <div className="App">
+            <h1>Banco de dados</h1>
+            <p> Olá, {newName}</p>
+            <img src={url} alt="Minha Imagem"/>
+            <HelloWorld/>
+            <SayMayName name="Guilherme"/>
+            <SayMayName name="Eu"/>
+            <Pessoa nome="Guilherme" idade={20} profissao="Programador" foto="https://labetno.ufpa.br/images/galeria_em_artigos/image03_grd.png" />
+        </div>
+    );
 }
 
+//4 - OBRIGATORIAMENTE o componente DEVE ser exportado
 export default App;
