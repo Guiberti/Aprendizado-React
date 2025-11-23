@@ -3,6 +3,7 @@ import HelloWorld from "./components/HelloWorld";
 import SayMayName from "./components/SayMayName";
 import Pessoa from "./components/Pessoa";
 import Frase from "./components/Frase";
+import List from "./components/List";
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
             <SayMayName name="Guilherme"/>
             <SayMayName name="Eu"/>
             <Pessoa nome="Guilherme" idade={20} profissao="Programador" foto="https://labetno.ufpa.br/images/galeria_em_artigos/image03_grd.png" />
+            <List/>
         </div>
     );
 }
