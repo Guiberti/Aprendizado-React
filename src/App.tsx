@@ -2,7 +2,7 @@ import React from "react";
 import HelloWorld from "./components/HelloWorld";
 import SayMayName from "./components/SayMayName";
 import Pessoa from "./components/Pessoa";
-
+import Frase from "./components/Frase";
 
 function App() {
 
@@ -13,6 +13,8 @@ function App() {
     return (
         <div className="App">
             <h1>Banco de dados</h1>
+            <Frase/>
+            <Frase/>
             <p> Olá, {newName}</p>
             <img src={url} alt="Minha Imagem"/>
             <HelloWorld/>
