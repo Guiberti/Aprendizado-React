@@ -1,7 +1,8 @@
-function Item({marca} : {marca: string}) {
+
+function Item({marca, ano_lancamento} : {marca: string, ano_lancamento: number}) {
     return (
         <>
-            <li>{marca}</li>
+            <li>{marca} - {ano_lancamento}</li>
         </>
     )
 }
